@@ -9,18 +9,10 @@
 </style>
 
 <div class="example-wrapper">
-
-
     <ul>
         {% for user in users %}
             <li>{{ user.name }} {{ user.email }} ({{ user.password }})</li>
         {% endfor %}
-    </ul>
-
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/home/mmalinski/projects/teamup/src/Controller/UserController.php'|file_link(0) }}">src/Controller/UserController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/home/mmalinski/projects/teamup/templates/user/index.html.twig'|file_link(0) }}">templates/user/index.html.twig</a></code></li>
     </ul>
 </div>
 {% endblock %}
